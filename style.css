@@ -1,0 +1,519 @@
+@font-face {
+  font-family: "FEASFBI";
+  src: url("fonts/feast_of_flesh_bb/FEASFBI_.TTF") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SECTAR";
+  src: url("fonts/sectar/Sectar_SP.otf");
+  font-display: swap;
+}
+
+/* ------ Global ------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red-dark: #310000;
+  --red-medium: #800000;
+  --red-light: #ff0000;
+
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: radial-gradient(var(--red-dark), var(--black));
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ------ Cabeçalho ------ */
+
+.header-main {
+  background: url(imgs/logos/fundo-section-1.png) no-repeat center top/cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.header .image-logo {
+  width: 15%;
+  height: auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.header .image-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header .image-logo img:hover {
+  filter: drop-shadow(0 0 10px var(--red-light));
+}
+
+.header .navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header .navbar ul li a:hover {
+  filter: drop-shadow(0 0 10px var(--red-light));
+  color: var(--red-light);
+}
+
+.header .navbar ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+/* ------ Main ------ */
+
+.main {
+  background-color: var(--black);
+}
+
+/* ------ Primeira Section ------ */
+
+.main .container-main {
+  position: relative;
+  background: url(imgs/logos/fundo-section-1.png) no-repeat center center/cover;
+  margin: 0 0 -100px 0;
+  padding-bottom: 30px;
+  border-radius: 0 0 50px 50px;
+}
+
+.cont-pri-1 {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* ------ Elements ------ */
+
+#blood {
+  position: absolute;
+  top: -120px;
+  left: 0;
+  width: 300px;
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+
+.cont-pri-1 h1 {
+  text-align: center;
+  filter: drop-shadow(0 0 15px var(--red-light));
+  animation: scale 5s ease-in-out infinite;
+}
+
+.cont-pri-1 .container-sec {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-pri-1 .container-sec .text-main {
+  width: 60%;
+  text-align: justify;
+  font-size: 19.2px;
+  filter: drop-shadow(0 0 10px var(--red-light));
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cont-pri-1 .container-sec .image-hexatombe {
+  width: 40%;
+  text-align: center;
+  position: relative;
+}
+
+.cont-pri-1 .container-sec .image-hexatombe img {
+  width: 80%;
+  border-radius: 10px;
+  animation: box 5s infinite;
+}
+
+#sacrificio {
+  position: absolute;
+  top: 45%;
+  right: 19%;
+  transform-origin: 150px center;
+  animation: orbitar 15s linear infinite, filter 5s linear infinite;
+  animation-delay: -7.5s;
+  width: 200px;
+  z-index: 1;
+}
+
+#sange {
+  position: absolute;
+  top: 45%;
+  right: 19%;
+  transform-origin: 150px center;
+  animation: orbitar 15s linear infinite, filter 5s linear infinite;
+  width: 200px;
+  z-index: 1;
+}
+
+.cont-pri-1 button {
+  display: block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: var(--red-medium);
+  border: none;
+  border-radius: 10px;
+  animation: box 5s infinite;
+  cursor: pointer;
+}
+
+.cont-pri-1 button:hover {
+  filter: drop-shadow(0 0 15px var(--red-light));
+  transform: scale(1.05);
+}
+
+.cont-pri-1 button a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+/* ------ Segunda Section ------ */
+
+.main .container-secundary {
+  text-align: justify;
+  height: 456px;
+  position: relative;
+}
+
+.foto {
+  position: absolute;
+  animation: background-personas 20s ease-in-out infinite;
+  top: 25%;
+  right: 10%;
+  height: 340px;
+}
+
+#colosso {
+  animation-delay: -4s;
+}
+
+#aguiar {
+  animation-delay: -8s;
+}
+
+#kime {
+  animation-delay: -12s;
+}
+
+#labirinto {
+  animation-delay: -16s;
+}
+
+#jae {
+  animation-delay: -20s;
+}
+
+.cont-sec-2 {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.cont-sec-2 .text-secundy h2 {
+  padding: 50px 0;
+  text-align: center;
+  filter: drop-shadow(0 0 15px var(--red-light));
+}
+
+.cont-sec-2 .text-secundy p {
+  font-size: 19.2px;
+  filter: drop-shadow(0 0 2px var(--red-light));
+}
+
+/* ------ Terçeira Section ------ */
+
+.main .container-tertiary {
+  position: relative;
+}
+
+/* .cont-tert-3 {
+
+} */
+
+.cont-tert-3 {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  background: linear-gradient(
+    to left,
+    var(--black),
+    var(--red-dark),
+    var(--black)
+  );
+}
+
+.cont-tert-3 .characters {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.cont-tert-3 .characters h2 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  filter: drop-shadow(0 0 10px var(--red-light));
+  color: var(--red-dark);
+}
+
+.cont-tert-3 .characters img {
+  border-radius: 20px 20px 100px 100px;
+  animation: box 5s ease-in-out infinite;
+  margin-bottom: 250px;
+}
+
+/* ------Personagens ------ */
+
+.cont-tert-3 .characters-main {
+  display: flex;
+  width: 100%;
+}
+
+.cont-tert-3 .characters-main .persona {
+  width: 30%;
+}
+
+.cont-tert-3 .characters-main .persona img {
+  width: 100%;
+  animation: motion-top-bottom 10s ease-in-out infinite;
+  z-index: 0;
+}
+
+.cont-tert-3 .characters-main .about-persona {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  width: 70%;
+}
+
+.cont-tert-3 .characters-main-left .about-persona .about {
+  width: 450px;
+  margin: 0 0 0 30%;
+  border-radius: 10px;
+  animation: box 5s ease-in-out infinite, scale 10s ease-in-out infinite;
+}
+
+.cont-tert-3 .characters-main .about-persona .about h3 {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 5px 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.cont-tert-3 .characters-main .about-persona .about p {
+  background-color: var(--black);
+  border-radius: 0 0 10px 10px;
+  padding: 5px 10px;
+}
+
+.cont-tert-3 .characters-main-right .about-persona .about#about {
+  width: 450px;
+  margin: 0 0 0 10%;
+  border-radius: 10px;
+  animation: box 5s ease-in-out infinite, scale 10s ease-in-out infinite;
+}
+
+/* ------ Skills ------ */
+
+.persona-full-about {
+  position: relative;
+}
+
+.cont-tert-3 .skills .plate {
+  width: 400px;
+  animation: motion-top-bottom 5s ease-in-out infinite;
+  z-index: 1;
+}
+
+.cont-tert-3 .skills .plate .title {
+  background: var(--white);
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 5px;
+  font-size: 20px;
+}
+
+/* quando a própria .title recebe a variação 'super' */
+.cont-tert-3 .skills .plate .title.super {
+  background: var(--red-light);
+}
+
+.cont-tert-3 .skills .plate .text {
+  background: var(--black);
+  padding: 3px 5px;
+  font-size: 15px;
+}
+
+/* Esquerda */
+
+.cont-tert-3 .skills .name-persona {
+  font-size: 80px;
+  font-family: "SECTAR";
+  font-weight: 100;
+  text-align: center;
+  text-shadow: -5px 0 10px var(--black);
+  color: var(--red-medium);
+
+
+}
+
+.cont-tert-3 .skills .text-persona {
+  text-align: center;
+  font-size: 25px;
+  font-family: "FEASFBI";
+  font-weight: 100;
+  text-shadow: -5px 0 5px var(--black);
+}
+
+.cont-tert-3 .skills .text-persona span {
+  color: var(--red-light);
+}
+
+.cont-tert-3 .skills .left .plate.left-1 {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+}
+
+.cont-tert-3 .skills .left .plate.left-2 {
+  position: absolute;
+  top: 62%;
+  left: 12%;
+}
+
+.cont-tert-3 .skills .left .plate.left-3 {
+  position: absolute;
+  top: 74%;
+  left: 12%;
+}
+
+/* Direita */
+
+.cont-tert-3 .skills .right .plate.right-1 {
+  position: absolute;
+  top: 50%;
+  right: 12%;
+}
+
+.cont-tert-3 .skills .right .plate.right-2 {
+  position: absolute;
+  top: 62%;
+  right: 12%;
+}
+
+.cont-tert-3 .skills .right .plate.right-3 {
+  position: absolute;
+  top: 74%;
+  right: 12%;
+}
+
+/* foco acessível para links e botões */
+.header .navbar ul li a:focus-visible,
+.cont-pri-1 button:focus-visible,
+.cont-pri-1 a.btn-main:focus-visible {
+  outline: 3px solid rgba(255, 0, 0, 0.6);
+  outline-offset: 3px;
+}
+
+/* ------ Section Quatro ------ */
+
+.container-quaternary {
+  height: 500px;
+  background: linear-gradient(to bottom, var(--black), var(--red-dark), var(--black));
+}
+
+.cont-quat-4 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ------ Animações ------ */
+
+@keyframes box {
+  0%,
+  100% {
+    box-shadow: 0 0 20px var(--red-light);
+  }
+  33% {
+    box-shadow: 0 0 20px var(--red-medium);
+  }
+  66% {
+    box-shadow: 0 0 20px var(--red-dark);
+  }
+}
+
+@keyframes filter {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 20px var(--red-light));
+  }
+  33% {
+    filter: drop-shadow(0 0 20px var(--red-medium));
+  }
+  66% {
+    filter: drop-shadow(0 0 20px var(--red-dark));
+  }
+}
+
+@keyframes orbitar {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes background-personas {
+  0%,
+  10% {
+    opacity: 0.5;
+  }
+  20%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes motion-top-bottom {
+  0%,
+  100% {
+    transform: translateY(0) skew(-5deg, -5deg);
+  }
+  50% {
+    transform: translateY(10px) skew(-2deg, -5deg);
+  }
+}
