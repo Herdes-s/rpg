@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="lab"></div>
     <header class="header-main">
       <div class="header">
         <div class="image-logo">
@@ -28,9 +29,8 @@
       <section class="container-main">
         <div class="cont-pri-1">
           <div class="elements">
-            <img id="blood" src="imgs/outros/blood.jpg" alt="" />
             <img id="sacrificio" src="imgs/outros/sacrificio.png" alt="" />
-            <img id="sange" src="imgs/outros/sange.png" alt="" />
+            <img id="sangue" src="imgs/outros/sange.png" alt="" />
           </div>
           <div class="title-main">
             <h1>
@@ -62,7 +62,7 @@
               <img src="imgs/logos/Cultista.jpg" alt="Cultista — ilustração" />
             </div>
           </div>
-          <a href="#" class="btn-main" role="button">Saiba mais</a>
+          <button>Saiba mais</button>
         </div>
       </section>
       <section class="container-secundary">
@@ -70,7 +70,7 @@
           <div class="back-image">
             <img
               id="colosso"
-              class="foto"
+              class="foto active"
               src="imgs/persona/background/Dalmo-Colosso.png"
               alt="Fundo: Dalmo (Colosso)"
             />
@@ -150,24 +150,25 @@
                 </div>
                 <div class="plate left-2">
                   <div class="title">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>PRESSÃO ATIMOSFÉRICA</h3>
                     <p>3 PD</p>
                   </div>
                   <div class="text">
                     <p>
-                      Quando acertar um ataque corpo a corpo, você pode fazer um
-                      ataque adicional ou uma manobra.
+                      Se acertar um ataque você calsa +1d10 pontos de dano de
+                      Energia (+5) e o alvo fica atordoado por mais uma rodada.
                     </p>
                   </div>
                 </div>
                 <div class="plate left-3">
                   <div class="title super">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>MANOPLAS DO COLOSSO</h3>
                   </div>
                   <div class="text">
                     <p>
-                      Quando acertar um ataque corpo a corpo, você pode fazer um
-                      ataque adicional ou uma manobra.
+                      Esse par de manoplas amaldiçoada de Energia fazem com que
+                      cada soco seja acompanhada de pressao atmosferica
+                      demolidora. Ela causa +1d10(5) de dano de Energia.
                     </p>
                   </div>
                 </div>
@@ -216,36 +217,38 @@
                 </p>
                 <div class="plate right-1">
                   <div class="title">
-                    <h3>GOLPE DE ARENA</h3>
-                    <p>3 PD</p>
+                    <h3>ASSASSINATO FURTIVO</h3>
+                    <p>2 PD</p>
                   </div>
                   <div class="text">
                     <p>
-                      Quando acertar um ataque corpo a corpo, você pode fazer um
-                      ataque adicional ou uma manobra.
+                      Quando atinge um alvo desprevinido ou que você esteja
+                      flanqueando, você causa +3d8 (12) pontos de dano.
                     </p>
                   </div>
                 </div>
                 <div class="plate right-2">
                   <div class="title">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>ZONA DOS SUSSURROS</h3>
                     <p>3 PD</p>
                   </div>
                   <div class="text">
                     <p>
-                      Quando acertar um ataque corpo a corpo, você pode fazer um
-                      ataque adicional ou uma manobra.
+                      Marca uma área com "X". Nessa área, recebe +5 em testes de
+                      ataque, não sofre penalidade em furtividade após ações
+                      chamativas e melhora dano do assassino.
                     </p>
                   </div>
                 </div>
                 <div class="plate right-3">
                   <div class="title super">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>PUNHAL X</h3>
                   </div>
                   <div class="text">
                     <p>
-                      Quando acertar um ataque corpo a corpo, você pode fazer um
-                      ataque adicional ou uma manobra.
+                      Quando atacar, você pode gastar 2PD para deixar o alvo
+                      desprevinido, se acertar o ataque, o alvo fica cego por 1
+                      rodada.
                     </p>
                   </div>
                 </div>
@@ -253,30 +256,31 @@
             </div>
             <div class="characters-main-right characters-main">
               <div class="about-persona">
-                <div class="about" id="about">
-                  <h3>Jae / Jae</h3>
+                <div class="about-l">
+                  <h3>Jae / X</h3>
                   <p>
-                    Dalmo… ou como a maioria prefere chamar, “o Colosso”. Se
-                    você já viu ele de perto, sabe que esse apelido não é
-                    exagero — é aviso. Dizem que ele não nasceu forte: foi
-                    moldado. Cada marca no corpo dele carrega uma história que
-                    ninguém tem coragem de pedir pra ouvir. O Colosso é o tipo
-                    de homem que avança quando todos recuam, como se o medo não
-                    tivesse lugar dentro dele. Alguns juram que ele já enfrentou
-                    criaturas do Outro Lado sozinho e voltou vivo só por
-                    teimosia. Ele não fala muito, mas quando olha pra você,
-                    parece que está avaliando se você vai aguentar o que está
-                    por vir… ou se vai ser só mais um nome nas paredes de algum
-                    ritual. Se tem alguém que você quer do seu lado quando o
-                    impossível se aproxima, é o Colosso. E se ele estiver contra
-                    você? Então é melhor correr antes que ele perceba.
+                    Jae é o tipo de pessoa que você percebe antes mesmo de ouvir
+                    o nome. Tem um olhar que parece sempre seguir alguma coisa
+                    que ninguém mais enxerga. Dizem que ele foi marcado pelo
+                    Outro Lado cedo demais, e que desde então carrega uma
+                    ligação que nenhum ritual conseguiu cortar. Ele não é dos
+                    mais fortes fisicamente, mas compensa com uma precisão quase
+                    sobrenatural: Jae nunca desperdiça um movimento, nunca
+                    hesita. Alguns acreditam que ele escuta “chamados” durante
+                    os surtos de influência rituais, e que por isso sempre sabe
+                    para onde ir — como se estivesse seguindo um mapa invisível.
+                    Trabalhar com Jae é perigoso: você nunca sabe se está sendo
+                    guiado por instinto… ou por algo que usa ele como
+                    mensageiro. Mas se existe alguém capaz de encontrar uma
+                    saída no meio do caos, é ele. Ou pelo menos é isso que todo
+                    mundo espera.
                   </p>
                 </div>
               </div>
               <div class="persona">
                 <img
                   src="imgs/persona/aleatorias/Jae-icon.png"
-                  alt="Ícone: Dalmo"
+                  alt="Ícone: Jae"
                 />
               </div>
             </div>
@@ -294,7 +298,7 @@
                 </p>
                 <div class="plate left-1">
                   <div class="title">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>PERITA</h3>
                     <p>3 PD</p>
                   </div>
                   <div class="text">
@@ -306,7 +310,7 @@
                 </div>
                 <div class="plate left-2">
                   <div class="title">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>DISPARO DA MORTE</h3>
                     <p>3 PD</p>
                   </div>
                   <div class="text">
@@ -318,7 +322,7 @@
                 </div>
                 <div class="plate left-3">
                   <div class="title super">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>SNIPER DA KEMI</h3>
                   </div>
                   <div class="text">
                     <p>
@@ -340,20 +344,21 @@
                 <div class="about">
                   <h3>Kemi / Kemi</h3>
                   <p>
-                    Dalmo… ou como a maioria prefere chamar, “o Colosso”. Se
-                    você já viu ele de perto, sabe que esse apelido não é
-                    exagero — é aviso. Dizem que ele não nasceu forte: foi
-                    moldado. Cada marca no corpo dele carrega uma história que
-                    ninguém tem coragem de pedir pra ouvir. O Colosso é o tipo
-                    de homem que avança quando todos recuam, como se o medo não
-                    tivesse lugar dentro dele. Alguns juram que ele já enfrentou
-                    criaturas do Outro Lado sozinho e voltou vivo só por
-                    teimosia. Ele não fala muito, mas quando olha pra você,
-                    parece que está avaliando se você vai aguentar o que está
-                    por vir… ou se vai ser só mais um nome nas paredes de algum
-                    ritual. Se tem alguém que você quer do seu lado quando o
-                    impossível se aproxima, é o Colosso. E se ele estiver contra
-                    você? Então é melhor correr antes que ele perceba.
+                    A Kemi é o tipo de pessoa que muita gente subestima — e se
+                    arrepende depois. Ela carrega um silêncio estranho, não de
+                    quem é tímida, mas de quem ouve coisas. Coisas que você
+                    torce para nunca ouvir também. Há quem diga que a Kemi
+                    enxerga rastros do Outro Lado mesmo quando o véu está
+                    fechado. Ela não teme lugares escuros nem os símbolos que
+                    fazem outros perderem a sanidade. Na verdade, parece até
+                    confortável perto deles. É rápida, precisa e tem uma frieza
+                    que não vem da falta de emoção, mas de quem já viu demais.
+                    Alguns agentes acreditam que, se um dia o Hexatombe se abrir
+                    completamente, Kemi será uma das poucas que vai entender o
+                    que está acontecendo — talvez até antes de acontecer.
+                    Trabalhar ao lado dela dá segurança… mas também dá a
+                    sensação de que, em silêncio, ela sabe algo que você não
+                    sabe. E que talvez seja melhor assim.
                   </p>
                 </div>
               </div>
@@ -372,36 +377,37 @@
                 </p>
                 <div class="plate right-1">
                   <div class="title">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>ATAQUE ESPECIAL</h3>
                     <p>3 PD</p>
                   </div>
                   <div class="text">
                     <p>
-                      Quando acertar um ataque corpo a corpo, você pode fazer um
-                      ataque adicional ou uma manobra.
+                      Gasta PD para receber um bônus de +5 no teste de ataque e
+                      na rolagem de dado.
                     </p>
                   </div>
                 </div>
                 <div class="plate right-2">
                   <div class="title">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>PREDADOR DE SANGUE</h3>
                     <p>3 PD</p>
                   </div>
                   <div class="text">
                     <p>
-                      Quando acertar um ataque corpo a corpo, você pode fazer um
-                      ataque adicional ou uma manobra.
+                      Memoriza o odor de uma vitima, recebendo +1D em testes
+                      para rastreá-la, percebê-la e atacá-la.
                     </p>
                   </div>
                 </div>
                 <div class="plate right-3">
                   <div class="title super">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>MACHADO DO MUTILADOR NOTURNO</h3>
                   </div>
                   <div class="text">
                     <p>
-                      Quando acertar um ataque corpo a corpo, você pode fazer um
-                      ataque adicional ou uma manobra.
+                      Quando atinge uma vitima, você pode gastar 1PD para
+                      deixá-la sangrando (um ser sangrando perde 1d6 PV por
+                      rodada).
                     </p>
                   </div>
                 </div>
@@ -409,23 +415,30 @@
             </div>
             <div class="characters-main-right characters-main">
               <div class="about-persona">
-                <div class="about" id="about">
-                  <h3>Aguiar / Aguiar</h3>
+                <div class="about-l">
+                  <h3>Aguiar / Mutilador Noturno</h3>
                   <p>
-                    Dalmo… ou como a maioria prefere chamar, “o Colosso”. Se
-                    você já viu ele de perto, sabe que esse apelido não é
-                    exagero — é aviso. Dizem que ele não nasceu forte: foi
-                    moldado. Cada marca no corpo dele carrega uma história que
-                    ninguém tem coragem de pedir pra ouvir. O Colosso é o tipo
-                    de homem que avança quando todos recuam, como se o medo não
-                    tivesse lugar dentro dele. Alguns juram que ele já enfrentou
-                    criaturas do Outro Lado sozinho e voltou vivo só por
-                    teimosia. Ele não fala muito, mas quando olha pra você,
-                    parece que está avaliando se você vai aguentar o que está
-                    por vir… ou se vai ser só mais um nome nas paredes de algum
-                    ritual. Se tem alguém que você quer do seu lado quando o
-                    impossível se aproxima, é o Colosso. E se ele estiver contra
-                    você? Então é melhor correr antes que ele perceba.
+                    O Aguiar é o tipo de sujeito que não deveria estar vivo
+                    depois de tudo que já passou — mas está. E isso diz muito
+                    sobre ele. Ele não tem a força do Colosso, nem a
+                    sensibilidade ritual da Kemi, nem a precisão guiada do Jae.
+                    O que ele tem é algo mais simples… e bem mais perigoso:
+                    instinto de sobrevivência bruto, quase animal. Aguiar não
+                    recua, não congela, e não perde tempo tentando entender o
+                    que está olhando. Ele age. E, por algum motivo, essa
+                    impulsividade dele quase sempre leva ao resultado certo. Há
+                    rumores de que ele já encarou entidades do Outro Lado de
+                    frente, sem ritual, sem preparação, apenas com improviso e
+                    coragem. Nada glamuroso — só brutal. Os veteranos dizem que
+                    Aguiar não teme o Hexatombe… ou talvez ele tema tanto que
+                    aprendeu a atacá-lo antes que ele o engolisse. É difícil
+                    saber. O olhar dele é sempre firme, sempre calculando uma
+                    rota de fuga, sempre pronto para transformar qualquer coisa
+                    ao alcance em arma. Se você está numa situação impossível,
+                    cercado por criaturas que não deveriam existir, e alguém diz
+                    “o Aguiar tá vindo”… você respira um pouco mais aliviado.
+                    Mas também sabe que vai sobreviver porque ele decidiu
+                    sobreviver com você. E isso, no fim, é tudo que importa.
                   </p>
                 </div>
               </div>
@@ -449,7 +462,7 @@
                 </p>
                 <div class="plate left-1">
                   <div class="title">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>RAJADA CAÓTICA</h3>
                     <p>3 PD</p>
                   </div>
                   <div class="text">
@@ -461,7 +474,7 @@
                 </div>
                 <div class="plate left-2">
                   <div class="title">
-                    <h3>GOLPE DE ARENA</h3>
+                    <h3>LABIRINTO MENTAL</h3>
                     <p>3 PD</p>
                   </div>
                   <div class="text">
@@ -472,8 +485,19 @@
                   </div>
                 </div>
                 <div class="plate left-3">
-                  <div class="title super">
-                    <h3>GOLPE DE ARENA</h3>
+                  <div class="title">
+                    <h3>CAPTURAR MOMENTO</h3>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Quando acertar um ataque corpo a corpo, você pode fazer um
+                      ataque adicional ou uma manobra.
+                    </p>
+                  </div>
+                </div>
+                <div class="plate left-4">
+                  <div class="title">
+                    <h3>MAPA SANGUÍNEO</h3>
                   </div>
                   <div class="text">
                     <p>
@@ -495,20 +519,24 @@
                 <div class="about">
                   <h3>Labirinto / ?</h3>
                   <p>
-                    Dalmo… ou como a maioria prefere chamar, “o Colosso”. Se
-                    você já viu ele de perto, sabe que esse apelido não é
-                    exagero — é aviso. Dizem que ele não nasceu forte: foi
-                    moldado. Cada marca no corpo dele carrega uma história que
-                    ninguém tem coragem de pedir pra ouvir. O Colosso é o tipo
-                    de homem que avança quando todos recuam, como se o medo não
-                    tivesse lugar dentro dele. Alguns juram que ele já enfrentou
-                    criaturas do Outro Lado sozinho e voltou vivo só por
-                    teimosia. Ele não fala muito, mas quando olha pra você,
-                    parece que está avaliando se você vai aguentar o que está
-                    por vir… ou se vai ser só mais um nome nas paredes de algum
-                    ritual. Se tem alguém que você quer do seu lado quando o
-                    impossível se aproxima, é o Colosso. E se ele estiver contra
-                    você? Então é melhor correr antes que ele perceba.
+                    Ninguém sabe o verdadeiro nome dele. Entre aqueles que já
+                    viram as marcas de sangue nos corredores, ele é chamado
+                    apenas de Labirinto. Não porque ele vive em um — mas porque
+                    ele é um. Labirinto é uma entidade que distorce o espaço ao
+                    redor, dobrando salas, alongando corredores e criando
+                    caminhos impossíveis. Onde ele passa, o chão racha em
+                    padrões espirais, como se o próprio mundo estivesse tentando
+                    copiá-lo… ou fugir dele. Suas linhas são irregulares, como
+                    rabiscos feitos por alguém em desespero, sempre vermelhas,
+                    sempre frescas — como se acabassem de ser traçadas com um
+                    dedo banhado em sangue. Dizem que ele não fala. Ele guia. E
+                    nunca para um lugar seguro. A presença dele não é notada
+                    pelos olhos primeiro, mas pela sensação: um arrepio de que o
+                    caminho que você acabou de passar não existia antes. Pessoas
+                    relatam escutar um arrastar suave, como um dedo riscando
+                    paredes infinitas. Quando alguém tenta seguir essas marcas,
+                    acaba perdido por horas, dias… ou encontra apenas silêncio
+                    no final.
                   </p>
                 </div>
               </div>
@@ -518,10 +546,52 @@
       </section>
       <section class="container-quaternary">
         <div class="cont-quat-4">
+          <div class="slide active">
+            <img src="imgs/persona/carrosel/Arte do Dalmo.jpg" alt="" />
+            <div class="info">
+              <h1>Jae / mascara</h1>
+              <p>O dia em que jae colocou a mascara!</p>
+            </div>
+          </div>
 
+          <div class="slide">
+            <img
+              src="imgs/persona/carrosel/Ilustração Aguiar Episódio 4.jpg"
+              alt=""
+            />
+            <div class="info">
+              <h1>Jae / mascara</h1>
+              <p>O dia em que jae colocou a mascara!</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="imgs/persona/carrosel/Jae.jpg" alt="" />
+            <div class="info">
+              <h1>Jae / mascara</h1>
+              <p>O dia em que jae colocou a mascara!</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="imgs/persona/carrosel/Labirinto.jpg" alt="" />
+            <div class="info">
+              <h1>Jae / mascara</h1>
+              <p>O dia em que jae colocou a mascara!</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="imgs/persona/carrosel/Kemi cinematic.jpg" alt="" />
+            <div class="info">
+              <h1>Jae / mascara</h1>
+              <p>O dia em que jae colocou a mascara!</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
