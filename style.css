@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
+
 @font-face {
   font-family: "FEASFBI";
   src: url("fonts/feast_of_flesh_bb/FEASFBI_.TTF") format("truetype");
@@ -27,7 +29,6 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background: radial-gradient(var(--red-dark), var(--black));
   color: var(--white);
   transition: all 0.3s ease-in-out;
@@ -57,6 +58,7 @@ body {
 .header .image-logo img {
   width: 100%;
   height: auto;
+  mix-blend-mode: screen;
 }
 
 .header .image-logo img:hover {
@@ -140,6 +142,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .cont-pri-1 .container-sec .image-hexatombe {
@@ -221,11 +227,15 @@ body {
   padding: 50px 0;
   text-align: center;
   filter: drop-shadow(0 0 15px var(--red-light));
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .cont-sec-2 .text-secundy p {
   font-size: 19.2px;
   filter: drop-shadow(0 0 2px var(--red-light));
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* ------ Terçeira Section ------ */
@@ -255,7 +265,11 @@ body {
   font-size: 50px;
   padding-bottom: 20px;
   filter: drop-shadow(0 0 10px var(--red-light));
-  color: var(--red-dark);
+  color: var(--black);
+
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .cont-tert-3 .characters img {
@@ -305,6 +319,9 @@ body {
   color: var(--black);
   padding: 5px 10px;
   border-radius: 10px 10px 0 0;
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .cont-tert-3 .characters-main .about-persona .about p,
@@ -341,6 +358,10 @@ body {
   align-items: center;
   padding: 3px 5px;
   font-size: 20px;
+
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* quando a própria .title recebe a variação 'super' */
@@ -354,8 +375,6 @@ body {
   font-size: 15px;
 }
 
-/* Esquerda */
-
 .cont-tert-3 .skills .name-persona {
   font-size: 80px;
   font-family: "SECTAR";
@@ -368,9 +387,11 @@ body {
 .cont-tert-3 .skills .text-persona {
   text-align: center;
   font-size: 25px;
-  font-family: "FEASFBI";
-  font-weight: 100;
   text-shadow: -5px 0 5px var(--black);
+
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .cont-tert-3 .skills .text-persona span {
@@ -463,6 +484,126 @@ body {
   opacity: 1;
   z-index: 2;
   pointer-events: auto;
+}
+
+/* ------ Section Cinco ------ */
+
+.container-quinary {
+  width: 100%;
+}
+
+.cont-quin-5 {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.cont-quin-5 .actors {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 50px 0;
+  z-index: 3;
+}
+
+.cont-quin-5 .actors img {
+  width: 200px;
+  animation: box 5s ease-in-out infinite;
+}
+
+.cont-quin-5 .actors .actor {
+  display: flex;
+}
+
+.cont-quin-5 .actors .actor .real:hover,
+.cont-quin-5 .actors .actor .fictitious:hover {
+  transform: scale(1.5);
+}
+
+.cont-quin-5 .actors .actor .real,
+.cont-quin-5 .actors .actor .fictitious {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--red-dark);
+  border: 1px solid var(--black);
+  animation: box 5s ease-in-out infinite;
+}
+
+/* ------ footer ------ */
+
+.footer {
+  background: #0a0a0a;
+  color: #eee;
+  padding: 60px 20px 25px;
+  border-top: 2px solid #800000; /* borda sangue */
+  position: relative;
+  z-index: 3;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  color: #b10000;
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+.footer-logo p {
+  margin-top: 5px;
+  color: #b9b9b9;
+  font-size: 14px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  color: #b10000;
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-links li,
+.footer-social li {
+  margin: 6px 0;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #ff0000;
+  text-shadow: 0 0 5px #ff0000;
+  padding-left: 4px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  border-top: 1px solid #800000;
+  padding-top: 15px;
+  color: #8b8b8b;
+  font-size: 13px;
 }
 
 /* ------ Animações ------ */
